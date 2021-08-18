@@ -1,4 +1,4 @@
-$ErrorActionPreference = silentlycontinue
+$ErrorActionPreference = 'silentlycontinue'
 Get-Process iexplore -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue -Verbose
 $tempInternetFolders = @( "C:\Users\$env:username\Appdata\Local\Temp\Microsoft\Windows\Temporary Internet Files\*", 
                           "C:\Users\$env:username\Appdata\Local\TMicrosoft\Windows\INetCache\*", 
